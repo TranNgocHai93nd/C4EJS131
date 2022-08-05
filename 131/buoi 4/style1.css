@@ -1,0 +1,73 @@
+body{
+    width:100%;
+    font-family: Times New Roman;
+    background-color: #fff;
+   
+}
+.box{
+    max-width:500px;
+    margin:auto auto;
+    border: solid 3px black;
+    line-height: 15px;
+}
+h1{
+    font-weight:bold;
+    text-align: center;
+    color: aqua;
+}
+h3{
+    font-weight:bold;
+    text-align: center;
+}
+h2 {
+    margin-left:20px;
+    color: aqua;
+}
+ul{
+font-weight: bold;
+}
+.tip1{
+    color:rebeccapurple;
+}
+.tip{
+   background-clip:border-box ;
+   border:#fff solid  0.1px;
+   background-image : 
+   url(https://png.pngtree.com/thumb_back/fw800/back_pic/00/04/59/1156249bf7945b1.jpg);
+   background-size:100% ;
+   background-repeat: no-repeat;
+   box-sizing;
+}
+.box2{
+    border: dashed 2px rgb(230, 34, 34);
+    border-radius: 10px;
+    background-image:linear-gradient(-90deg,rgba(155,75,75,0.3),#ccc);
+    margin:20px ; 
+}
+.box1{
+    max-height:400px;
+    background-image:
+    url(https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/trantuananh/2021_01_24/5/anh-bikini-nong-bong-cua-co-gai-mac-ao-dai-dep-nhu-mai-phuong-thuy-hinh-3.jpg);
+    background-size: cover;
+    padding:5% 0%;
+    background-repeat:no-repeat;
+}
+ul {
+    line-height: 30px;
+}
+.shadow{
+    box-shadow: 4px 4px 11px 1px rgb(233 96 30 / 87%);
+}
+.tx-shadow{
+    text-shadow: 3px 3px 7px #3f51b5;
+}
+.botton{
+    text-decoration: none;
+    margin:0px 20px 10px ;
+    background-color: rebeccapurple;
+    border:solid 1px black;
+    padding:0.5em 1em;
+    border-radius: 4px;
+    display:inline-block;
+    color:#fff;
+}
