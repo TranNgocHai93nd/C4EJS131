@@ -94,8 +94,39 @@
 // cach 3: tu lap ham min,max
 
 // cho chuỗi, MindX , xuất ra mảng đảo ngược chiều lại
-const myArr = "MINX"  ;
-const newArr = Array.from(myArr);
-const newArr1 = newArr.reverse();
-const newArr2= newArr1.join("")
-console.log(newArr2);
+
+
+// let x = prompt("Nhập chuỗi ký tự để đảo ngược","")
+// document.write("Chuỗi đảo ngược là: " +myFunction7(x));
+// const x  = "Mindx";
+// console.log(myFunction7(x));
+// function myFunction7 (str) {
+//     let myString= str;
+//     let Arr = Array.from(myString);
+//     let nArr = Arr.reverse();
+//     let str1 = nArr.join("");
+//     return str1;
+// }
+// checkYear(2044);
+// check(2014);
+//    function check (y) {
+    
+//     if (y%4==0 ){
+//         console.log(y + " la nam nhuan") ;
+//     } else {return console.log(y + " Khong la nam nhuan");}
+// }
+// 2 cách chinh tạo ra 1 Object là: dùng key work New chuyển các number, string, boolean thành object, 
+// Object literal: Object thuần tuý
+// let person = {} // khai bao nhu nay xua ra doi tuong Object
+// person.name = "hai";
+// person.age = "29";
+// person.height = "1.75";
+// console.log(person);
+
+
+
+
+
+
+
+
