@@ -123,6 +123,17 @@
 // person.height = "1.75";
 // console.log(person);
 
+//const headingNode = document.getElementById('demo1');
+const para = document.createElement("p");
+const textpa = document.createTextNode("this is me");
+para.appendChild(textpa);
+//const parent = document.getElementById("demo");
+const parent = document.getElementsByTagName("div");
+parent.appendChild(para);
+console.log(parent)
+
+
+
 
 
 

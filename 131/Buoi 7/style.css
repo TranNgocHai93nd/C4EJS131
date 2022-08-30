@@ -117,9 +117,9 @@ body{
     align-items: center;
     justify-content: space-between;
     margin-top: 0px;
-    transition: all 0.3s linear;
+    transition: all (2s,10s) ease-in-out;
 }
-section{
+section #language {
    background-image: red;
     padding-bottom: 30px;
     color: #fff;
@@ -138,7 +138,8 @@ option{
     color:red;
 }
 .footer-language:active{
-    border-color: #fff;
+    border-color:red;
+    background-color: rgb(217, 205, 205);
 }
 li{
     padding:0px;
