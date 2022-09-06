@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body style="margin:0px;">
-    
     <div class="container">
         <div class="heading">
             <div class="heading-logo">
@@ -24,72 +23,76 @@
                 </ul>
             </div>
         </div>
-       
         <div class="main">
             <div class="main-head">Creat Account</div>
-            <form >
-                <div class="main-form">
+            <form action="" method="POST" class="form" name="myForm" id="register-form" >
+                <!-- section 1 -->
+                <div class="form-group">
                     <div class="main_name1">
                         <label for="FirstName">First Name</label>
-                        <input id="FirstName" type="text" placeholder="FirstName">
+                        <input id="FirstName" name="FirstName" rules="required" type="text" placeholder="FirstName">
+                        <span class="form-message"></span>
                     </div>
                     <div class="main_name2">
                         <label for="LastName">Last Name</label>
-                        <input id="LastName" type="text" placeholder="LastName">
+                        <input id="LastName" name="LastName" rules="required" type="text" placeholder="LastName">
+                        <span class="form-message"></span>
                     </div>
                 </div>
                 <!-- section 2 -->
-                <div class="main-form">
+                <div class="form-group">
                     <div class="main_name1">
                         <label for="country">Country Viewing From</label>
-                        <select name="country" id="country">
+                        <select name="country" id="country" rules="required">
+                            <option value=""></option>
                             <option value="Vietnam">VietNam</option>
                             <option value="England">England</option>
                             <option value="Japan">Japan</option>
                             <option value="Germany">Japan</option>
-                        
                         </select>
+                        <span class="form-message"></span>
                     </div>
                     <div class="main_name2"></div>
                 </div>
                 <!-- section 3 -->
-                <div class="main-form">
-                    <form action="">
-    
-                    </form>
+                <div class="form-group">
                     <div class="main_name1">
                         <label for="User Name">User Name</label>
-                        <input id="User Name" type="text" placeholder="User Name" required>
+                        <input id="User Name" name="User Name" rules="required" type="text" placeholder="User Name" >
+                        <span class="form-message"></span>
                     </div>
                     <div class="main_name2">
-                            <button type="submit" id="check" >Check</button>
+                        <button class="form-submit" type="submit" id="check" >Check</button>
 
                     </div>
                 </div>
                 <!-- section 4 -->
-                <div class="main-form">
+                <div class="form-group">
                     <div class="main_name1">
                         <label for="Email">Email Address</label>
-                        <input id="Email" type="Email Address" placeholder="Email Address "required>
+                        <input id="Email" name="Email" rules="required|email" type="text" placeholder="Email Address">
+                        <span class="form-message"></span>
                     </div>
                     <div class="main_name2">
-                        <label for="Confirm Address Email">Confirm Address Email</label>
-                        <input id="Confirm Address Email" type="text" placeholder="Confirm Address Email">
+                        <label for="confirmEmail">Confirm Address Email</label>
+                        <input id="confirmEmail" name="confirmEmail" rules="required|confirmEmail" type="text" placeholder="Confirm Address Email">
+                        <span class="form-message"></span>
                     </div>
                 </div>
                 <!-- section 5 -->
-                <div class="main-form">
+                <div class="form-group">
                     <div class="main_name1">
-                        <label for="Password">Password</label>
-                        <input id="Password" type="Password" placeholder="Password">
+                        <label for="password">Confirm Password</label>
+                        <input id="password" name="password"  rules="required|min:6" type="password" placeholder="Password">
+                        <span class="form-message"></span>
                     </div>
                     <div class="main_name2">
                         <label for="Confirm Password">Confirm Password</label>
-                        <input id="Confirm Password" type="text" placeholder="Confirm Password">
+                        <input id="Confirm Password" name="Confirm Password"  rules="required|confirmPass" type="password" placeholder="Confirm Password">
+                        <span class="form-message"></span>
                     </div>
+                </div>
             </form>
-            
-            </div>
             <!-- section 6-->
             <div class="main-option">
                 <div class="main-option-check1">
@@ -112,17 +115,13 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <!-- Button -->
-        <div class="sign-account">
-            <div class="sign-account_note1">
-                Already have an account? <a href="#"><span>Sign In</span></a>
-            </div>
-            <div class="sign-account_note2">
-                <div><a href="#" class="back"><span>◄</span>BACK</a></div>
-                <input class="sign-account_button" type="button" value="CONTINNUE" >
-            </div>
+            
         </div>
     </div>
+    <script src="./main.js"></script>
+    <script>
+         Validator ('#register-form');
+        
+    </script>
 </body>
 </html>

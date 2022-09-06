@@ -26,7 +26,6 @@ function add () {
 
     const boxBut = document.createElement("button");
         boxBut.className = "but-dele";
-        boxBut.onclick= remove;
         boxconbut.appendChild(boxBut);
     const nodebut = document.createTextNode("Delete");
         boxBut.appendChild(nodebut);
@@ -39,11 +38,19 @@ function add () {
     listContent.appendChild(maincontent);
     
     
+   
+  
+
+
 }
 
-function remove() {
-    child.parentNode.removeChild(child);
-  }
+const listContent = document.getElementById("demo6");
+listContent.addEventListener('click',function (event){
+    if(event.target.className === "but-dele") {
+        const divItem = event.target.parentElement;
+        listContent.remove(divItem);
+
+}})
 
 
 
