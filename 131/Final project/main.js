@@ -43,6 +43,7 @@ validatorRules.min
                     ruleInfo = rule.split(':')// tách giá trị min:6
                     rule = ruleInfo[0]// ghi đè để lây min còn ruleInfo[1]=6
                 }
+
                 let ruleFunc = validatorRules[rule];
                 if (isRuleHasValue){
                     ruleFunc = ruleFunc(ruleInfo[1]);
