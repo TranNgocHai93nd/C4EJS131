@@ -98,6 +98,7 @@
             border-radius: 10px;
             background-color: blueviolet;
             color: #fff;
+            cursor: pointer;
 
         }
         .buttonSelect{
@@ -105,6 +106,10 @@
             align-items: center;
             justify-content: center;
             column-gap: 30px;
+        }
+        .btn.hidden{
+            background-color: beige;
+            color: red;
         }
     </style>
 </head>
@@ -144,33 +149,58 @@
         const recs = document.querySelectorAll('.rec');
         const pre = document.querySelector('.pre');
         btn.onclick = myFunction;
-        pre .onclick = myFunction1;
-        let click = 0;
+        pre.onclick = myFunction1;
+        let click = -1;
+        let arr = [];
+       console.log(circles);
         function myFunction () {
-            click ++;
+            click++ ;
+            if(click >= circles.length ) {
+                click = circles.length;
+                btn.classList.add('hidden')
+                btn.disabled = true ;
+            }
+            circles[click].classList.add('active');
+            recs[click].classList.add('active1')
+            arr = document.querySelectorAll('.box.active')
             
-            excuting();
         }
+        console.log(click);
+
+        let clickG = circles.length;
+        
         function myFunction1 () {
-            click--;
-            excuting();
+            clickG-=1;
+            
+            circles[ clickG].classList.remove('active');
+            recs[clickG].classList.remove('active1')
+            // excuting();
         }
-        function excuting() {
-            circles.forEach((circle, idx) => {
-            if(idx <  click) {
-                circle.classList.add('active')
-                } else {
-                circle.classList.remove('active')
-                }
-            })
-            recs.forEach((rec, idx) => {
-            if(idx <  click) {
-                rec.classList.add('active1')
-                } else {
-                rec.classList.remove('active1')
-                }
-            })
-        }
+        
+
+
+
+
+
+
     </script>
 </body>
 </html>
+
+
+<!-- function excuting() {
+    circles.forEach((circle, idx) => {
+    if(idx <  click) {
+        circle.classList.add('active')
+        } else {
+        circle.classList.remove('active')
+        }
+    })
+    recs.forEach((rec, idx) => {
+    if(idx <  click) {
+        rec.classList.add('active1')
+        } else {
+        rec.classList.remove('active1')
+        }
+    })
+} -->

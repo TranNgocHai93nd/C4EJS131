@@ -22,15 +22,11 @@ html {
     align-items: center;
     border-bottom: rgb(210 20 20) 1px solid;
     flex: 2;
-    position: relative;
-    left:25px;
 }
 .heading-nav{
     height: 60px;
     display: flex;
     flex: 1;
-    position: relative;
-    left:25px;
 }
 .heading-nav_items{
     list-style: none;
@@ -39,11 +35,12 @@ html {
     margin: 0px;
     padding: 0px;
     overflow: hidden; 
+    font-weight: bolder;
 }
 .heading-nav_items1{
     padding: 17px 30px;
     font-weight: bold;
-    color: red;
+    color: rgb(172, 160, 160);
     display: block;
     cursor: pointer;
 }
@@ -52,14 +49,14 @@ html {
     
 }
 .heading-nav_items1:first-child {
-    padding-left: 0px;
+    padding-left: 25px;
+    color:red;
+    font-weight: bolder;
 }
-li a {
-    color: red;
+li:nth-child(2){
+    color:#fff;
 }
-li a:hover{
-    color: rgb(156, 203, 241);
-}
+
 .main{
     height: 800px;
     margin: 0px 25px;
@@ -111,6 +108,7 @@ input{
     border: 1px solid #bbb0b08a;
     outline: none;
     margin-bottom: 5px;
+    box-sizing: border-box;
 }
 #country{
     height: 39px;
@@ -120,15 +118,6 @@ input{
     border-radius: 3px;
     border: 1px solid #bbb0b08a;
 }
-/* button#check{
-    font-size: 24px;
-    color: #fff;
-    background-color: black;
-    width: 151px;
-    height: 42px;
-    padding: 0px;
-    font-style: italic;
-} */
 .main-option-check1{
     font-size: 20px;
     display: flex;
@@ -207,6 +196,7 @@ button{
 }
 a{
     text-decoration: none;
+   
 }
 p{
     font-size: 14px;
@@ -218,6 +208,12 @@ span{
 img{
     width: 160px;
     height: 25px;
+    margin-left: 25px;
+}
+img[class='tick']{
+    width: 16px;
+    height: 13px;
+    margin: 0px;
 }
 button:hover {
     background-color: red;
@@ -242,4 +238,15 @@ button:hover {
     padding: 0px 20px;
     font-weight: bold;
     color: #fff;
+}
+input:hover{
+    border:2px solid rgb(184, 46, 46);
+}
+#country:hover{
+    border:2px solid rgb(184, 46, 46);
+}
+input::placeholder{
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(238, 156, 156,0.85);
 }

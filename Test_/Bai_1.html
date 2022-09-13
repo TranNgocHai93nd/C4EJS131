@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height:180px;
+            width:400px;
+            display: flex;
+            flex-direction: column;
+            column-gap: 10px;
+        }
+        .btn1{
+            color:red;
+        }
+        .box2{
+            height:180px;
+            width:400px;
+            display: flex;
+            flex-direction: column;
+            column-gap: 10px;
+        }
+        #errorMessage{
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    
+        <!-- BÀI 1 -->
+   
+   <div class="box1">
+    <h3>Bài 1: Tìm các số nguyên trong khoảng (a,b) </h3>
+        <label for="a">Nhap a</label>
+        <input type="text" id="a">
+        <label for="b">Nhap b</label>
+        <input type="text" id="b">
+        <br>
+        <button type="submit" class="btn1" >Finding</button>
+   </div>
+   <p  id="demo"></p>
+        
+    <!-- BÀI 2 -->
+    <div class="box2">
+        <h3>Bài 2:  Hàm có tham số truyền vào là một số nguyên trong khoảng (1-10) có tác dụng in ra hình tam giác </h3>
+            <label for="c">Nhap số trong khoảng (1-10)</label>
+            <input type="text" id="c">
+            <span id="errorMessage"></span>
+            <br>
+            <button type="submit" class="prt">Print</button>
+        <h3>Biểu đồ là; </h3>
+            <p  id="star"></p>
+       </div>
+
+
+
+
+   
+
+    <script>
+
+        // Bài 1
+        let btn1 = document.querySelector(".btn1");
+        let x = document.querySelector("#a");
+        let y = document.querySelector("#b");
+        btn1.onclick = myfunction
+        function myfunction () {
+            let arr = [];
+            let c = x.value;
+            let d = y.value;
+            for (let i=2; i<=d ; i++) {
+                let count = 0;
+                for (let j=2 ; j<=d ; j++) {
+                    if (i%j==0){
+                        count++;
+                    }
+                }
+                if(count<2 && i>c){
+                    arr.push(i);
+                }
+            }
+            let newArr = arr.toString()
+            document.getElementById("demo").innerHTML = `Các sô nguyên tố trong khoảng (${c},${d}) là:  `+ newArr
+        }
+
+        // Bài 2:
+       
+        let d=2;
+        let inputc = document.querySelector('#c');
+        let btn2 = document.querySelector(".prt");
+        console.log(inputc);
+        
+        btn2.onclick =  numberOneTriangle
+        function numberOneTriangle () {
+            let valueC = inputc.value;
+            console.log(valueC);
+            if (valueC>0 && valueC<10 ) {
+                let star = '' ;
+                for (let i=1 ; i<= valueC ; i++) {
+                star+= '*';
+                document.getElementById("star").innerHTML += `${star}<br>`;
+                }
+
+            }else{document.getElementById("errorMessage").innerHTML='Giá trị nhập không nằm trong khoảng cho phép,.Xin nhập lại!'}
+            
+        }
+        
+       
+
+    </script>
+
+</body>
+</html>
