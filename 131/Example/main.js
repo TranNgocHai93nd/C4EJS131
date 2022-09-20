@@ -8,28 +8,28 @@
     map()
     reduce()
 */
-const courses = [
-    {
-        id: 1,
-        name: 'Javascript',
-        coin: 60
-    },
-    {
-        id: 2,
-        name: 'jav',
-        coin: 50
-    },
-    {
-        id: 3,
-        name: 'PHP',
-        coin: 100
-    },
-    {
-        id: 4,
-        name: 'ReactJS',
-        coin: 60
-    },
-]
+// const courses = [
+//     {
+//         id: 1,
+//         name: 'Javascript',
+//         coin: 60
+//     },
+//     {
+//         id: 2,
+//         name: 'jav',
+//         coin: 50
+//     },
+//     {
+//         id: 3,
+//         name: 'PHP',
+//         coin: 100
+//     },
+//     {
+//         id: 4,
+//         name: 'ReactJS',
+//         coin: 60
+//     },
+// ]
 //Systag Array.method(function)
   
 
@@ -54,10 +54,35 @@ const courses = [
 //     return total + value;
 // })
 // console.log(totalx);
-let numbers = [60,[50,[100]],60]
-let myArray = numbers.reduce(totalArray,[])
-function totalArray (total,value) {
+// let numbers = [60,[50,[100]],60]
+// let myArray = numbers.reduce(totalArray,[])
+// function totalArray (total,value) {
   
-    return total.concat(value);
-}
-console.log(myArray);
+//     return total.concat(value);
+// }
+// console.log(myArray);
+let courses = [
+    'Javascript',
+    'PHP',
+    'Ruby'
+]
+// Array.prototype.map2 = function (callback) {
+//     let Arraylength = this.length;
+//     let output = [] ;
+//     for (let i=0 ; i<Arraylength ; i++){
+//         let result = callback(this[i]);
+//         output.push(result);
+//     }
+//     return output;
+// }
+// let htmls = courses.map2(function(course){
+//     return `<h2>Khoa hoc ${course}</h2>`;
+
+// })
+// console.log(htmls);
+// let html = courses.map2(function(course){
+//     return `<h2>Khoa hoc ${course}</h2>`;
+// })
+// console.log(html);
+
+

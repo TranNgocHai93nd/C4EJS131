@@ -1,0 +1,39 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    height:100px;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+ul li {
+    padding: 10px 15px;
+    border: 1px solid black;
+    
+}
+li:last-child {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+li:first-child{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+li:hover{
+     background-color: aqua;
+}
