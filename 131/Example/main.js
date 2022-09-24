@@ -85,4 +85,9 @@ let courses = [
 // })
 // console.log(html);
 
+const man1 = { name: "Sanji" }; // man 1 được lưu vào đia jchi #a001
+const man2 = man1;// man 2 lấy giá trị của man1 với dc o nho khac #a002 với giá trị của man1
+man1.name = 'zoro';// thya đổi giá trị của man1 nhung man2 dã coppy gia trị man1 
+console.log(man2.name);// tao ra mot clone Object moi de khong làm thay khi object cu bị thay doi
+
 

@@ -30,12 +30,11 @@ for ( let i=0;i<btnPre.length ; i++) {
 	function preFilm (e) {
 		let btnPrevious = e.target.nextElementSibling.nextElementSibling;
 		click--;
-		btnPrevious .style.transform= "translateX(0rem)";
-		btnPrevious .style.transition= "all 2s ease";
+		btnPrevious.style.transform= "translateX(0rem)";
+		btnPrevious.style.transition= "all 2s ease";
 		if (click <= 0){
 			click = 0;
 		}
-		
 		let btnNexCurrent = btnPrevious.nextElementSibling;
 		if(click == 1) {
 			btnNexCurrent.classList.add('disabled')
@@ -46,9 +45,7 @@ for ( let i=0;i<btnPre.length ; i++) {
 			btnNexCurrent.classList.remove('disabled')
 			e.target.classList.add('disabled')
 		}
-		
 	}
-	
 }
 
 
@@ -64,38 +61,12 @@ for ( let i=0;i<btnPre.length ; i++) {
 
 
 
-// function preFilm (event) {
-//     click--;
-
-	
-// 		parentList.style.transform= "translateX(0rem)";
-//     	parentList.style.transition= "all 2s ease";
-	
-//     if (click <= 0){
-//         click = 0;
-//     }
-//     // update()
-	
-    
-// }
 
 
 
 
 
 
-// function update() {
-
-    // if(click == 1) {
-    //     btnNex[i].classList.add('disabled')
-    //     btnPre[i].classList.remove('disabled')
-    // }
-    // if(click == 0) {
-    //     btnNex[i].classList.remove('disabled')
-    //     btnPre[i].classList.add('disabled')
-    // }
-    
-// }
 
 
 

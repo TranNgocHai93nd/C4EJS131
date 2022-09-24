@@ -5,14 +5,12 @@ header {
     background-color: transparent;
     z-index: 99;
 }
-
 header a:hover,
 header a i:hover,
 header i:hover {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
-
 .header-container {
     height: 100%;
     padding: 0 1rem;
@@ -24,7 +22,6 @@ header i:hover {
     align-items: center;
     background-color: black;
 }
-
 .header-container .header-left-item::after,
 .header-container .menu-item-more::after,
 .header-container .header-right-signin::after,
@@ -39,18 +36,15 @@ header i:hover {
     transition: all .35s ease-in-out;
     width: 0;
 }
-
 .header-container .header-left-item:hover::after,
 .header-container .menu-item-more:hover::after,
 .header-container .header-right-signin:hover::after,
 .header-container .header-search:hover::after {
     width: 100%;
 }
-
 .menu-item-more {
     position: relative;
 }
-
 .header-left li,
 .header-right li {
     display: inline-block;
@@ -61,7 +55,6 @@ header i:hover {
     margin-right: 1.2rem;
     display: inline-block;
 }
-
 .header-left-item a,
 .menu-item-more {
     color: rgba(255, 255, 255, 0.7);
@@ -70,11 +63,9 @@ header i:hover {
     transition: all .35s ease-in-out;
     padding: 0 1.5rem;
 }
-
 .header-left-item {
     position: relative;
 }
-
 .header-right-signin a {
     color: white;
     font-weight: 700;
@@ -82,7 +73,6 @@ header i:hover {
     padding: 0 1rem;
     text-transform: uppercase;
 }
-
 .header-right-signin,
 .header-search {
     position: relative;
@@ -157,7 +147,6 @@ header i:hover {
     margin-top: 1rem;
     position: relative;
 }
-
 .learn-more .learn-more-arrow img {
     position: absolute;
     top: 0;
@@ -416,9 +405,7 @@ footer {
     display: flex;
     justify-content: center;
     overflow: hidden;
-
 }
-
 .Films-catagoges-title{
     height: auto;
     width: 100%;
